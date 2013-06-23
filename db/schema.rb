@@ -11,14 +11,36 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130622043054) do
+ActiveRecord::Schema.define(:version => 20130622173322) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "phone"
     t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.string   "time"
+    t.integer  "counter",    :default => 0
+    t.string   "day"
+    t.string   "time1"
+    t.string   "time2"
+    t.string   "time3"
+    t.string   "time4"
+    t.string   "time5"
+    t.string   "time6"
+    t.string   "time7"
+    t.string   "time8"
+    t.string   "time9"
+    t.string   "time10"
+    t.string   "time11"
+    t.string   "time12"
+    t.string   "time13"
+    t.string   "time14"
+    t.string   "time15"
+    t.string   "time16"
+    t.string   "time17"
+    t.string   "time18"
+    t.string   "time19"
   end
 
 end
