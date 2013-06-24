@@ -1,12 +1,24 @@
 <div class='row-fluid'>
-	<div class='span6'>
-
-		<% @user.each do |u| %>
-			<%= u.name %><br />
-			<%= u.phone %><br />
-			<%= u.email %><br />
-			Day: <%= u.day %><br />
-			Time: <%= u.time %><br /><br />
-		<% end %>
-	</div>
+	
+	<h2>Times</h2>	
+	<div class='span8'>
+			<% @user.each do |u| %>
+				<table class='container' border='1'>
+					<th>Name</th>
+					<th>Number</th>
+					<th>Email</th>
+					<th>Day</th>
+					<th>Time</th>
+				<tr class='data'>
+					<td class='span3'><%= u.name %></td>
+					<td class='span3'><%= u.phone %></td>
+					<td class='span3'><%= u.email %></td>
+					<td class='span3'><%= u.day %></td>
+					<td class='span3'><%= u.time %></td>
+				</tr>
+				
+			<% end %>
+			</table>
+		</div>
 </div>
+

@@ -1,15 +1,21 @@
-<%= form_for @user do |f| %>
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name, :placeholder => "Enter your name." %>
+<div class='row-fluid'>
+  <div class='frontpage'>
+    <h2>Peace Corps Interview Scheduler</h2>
+
+    <%= form_for @user do |f| %>
+      <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name, :placeholder => "Enter your name." %>
+      </div>
+      <div class="field">
+        <%= f.label :email %>
+        <%= f.text_field :email, :placeholder => "Enter your email." %>
+      </div>
+      <div class="field">
+        <%= f.label :phone %>
+        <%= f.text_field :phone, :placeholder => "Enter your phone number." %>
+      </div>
+    	<button class="btn btn-primary" type="submit"class="actions">Save</button>
+    <% end %>
   </div>
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email, :placeholder => "Enter your email." %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %>
-    <%= f.text_field :phone, :placeholder => "Enter your phone number." %>
-  </div>
-	<button class="btn btn-primary" type="submit"class="actions">Save</button>
-<% end %>
+</div>

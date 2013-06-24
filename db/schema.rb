@@ -11,7 +11,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130622173322) do
+ActiveRecord::Schema.define(:version => 20130624181303) do
+
+  create_table "time_slots", :force => true do |t|
+    t.string   "slot1"
+    t.string   "slot2"
+    t.string   "slot3"
+    t.string   "slot4"
+    t.string   "slot5"
+    t.string   "slot6"
+    t.string   "slot7"
+    t.string   "slot8"
+    t.string   "slot9"
+    t.string   "slot10"
+    t.string   "slot11"
+    t.string   "slot12"
+    t.string   "slot13"
+    t.string   "slot14"
+    t.string   "slot15"
+    t.string   "slot16"
+    t.string   "slot17"
+    t.string   "slot18"
+    t.string   "slot19"
+    t.string   "slot20"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -24,23 +50,6 @@ ActiveRecord::Schema.define(:version => 20130622173322) do
     t.string   "day"
     t.string   "time1"
     t.string   "time2"
-    t.string   "time3"
-    t.string   "time4"
-    t.string   "time5"
-    t.string   "time6"
-    t.string   "time7"
-    t.string   "time8"
-    t.string   "time9"
-    t.string   "time10"
-    t.string   "time11"
-    t.string   "time12"
-    t.string   "time13"
-    t.string   "time14"
-    t.string   "time15"
-    t.string   "time16"
-    t.string   "time17"
-    t.string   "time18"
-    t.string   "time19"
   end
 
 end
