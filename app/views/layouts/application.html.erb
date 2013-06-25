@@ -37,7 +37,13 @@
 
   </head>
   <body>
-    <%= bootstrap_flash %>
+
+    <div class='messages'>
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, id: "flash_#{name}" %>
+      <% end %>
+    </div>
+        <%= bootstrap_flash %>
           <%= yield %>
         </div>
       </div><!--/row-->
@@ -48,6 +54,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag  'jquery-latest','jquery.tablesorter.min','jquery.tablesorter.pager' %>
 
   </body>
 </html>

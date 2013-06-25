@@ -2,7 +2,7 @@
   <div class='frontpage'>
     <h2>Peace Corps Interview Scheduler</h2>
 
-    <%= form_for @user do |f| %>
+    <%= form_for @user, :validate => true do |f| %>
       <div class="field">
         <%= f.label :name %>
         <%= f.text_field :name, :placeholder => "Enter your name." %>
@@ -15,7 +15,7 @@
         <%= f.label :phone %>
         <%= f.text_field :phone, :placeholder => "Enter your phone number." %>
       </div>
-    	<button class="btn btn-primary" type="submit"class="actions">Save</button>
+    	<button class="btn btn-inverse" type="submit"class="actions">Save</button>
     <% end %>
   </div>
 </div>

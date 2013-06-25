@@ -24,5 +24,6 @@ class User < ActiveRecord::Base
   validates_presence_of :email, :name, :phone, :on => :create
   validates_presence_of :time, :on => :update
   validates_uniqueness_of :name, :email, :on => :create
+  validates_email :email
 
 end

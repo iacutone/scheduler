@@ -7,6 +7,8 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 gem 'pry'
+gem 'jquery-tablesorter'
+gem 'client_side_validations'
 
 group :development do
 	gem 'better_errors'
