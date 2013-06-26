@@ -17,13 +17,11 @@
 
 class User < ActiveRecord::Base
 	include UsersHelper
-	has_one :time_slot
 
-  attr_accessible :email, :name, :phone, :time, :day
+  attr_accessible :email, :name, :phone, :time1, :time2, :day
 
   validates_presence_of :email, :name, :phone, :on => :create
-  validates_presence_of :time, :on => :update
-  validates_uniqueness_of :name, :email, :on => :create
+  validates_uniqueness_of :name, :email, :phone, :on => :create
   validates_email :email
 
 end

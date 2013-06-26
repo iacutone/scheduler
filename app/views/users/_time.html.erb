@@ -1,0 +1,68 @@
+<a href="#user-day1-modal" role="button" class="btn btn-inverse"  data-toggle="modal">Day 1</a> or 
+<a href="#user-day2-modal" role="button" class="btn btn-inverse"  data-toggle="modal">Day 2</a>
+
+<div id="user-day1-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">Time Selection
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+</div>
+<div class="modal-body">
+    <%= form_for @user do |f| %>
+			<div class='wrapper'>11:30 A.M. <%= f.radio_button(:time1, '11:30') %><br /><%= 1 - @time1 unless @time1 == nil %> spots remaining.</div> 
+			<div class='wrapper'>11:45 A.M. <%= f.radio_button(:time1, '11:45') %><br /><%= 6 - @time2 unless @time2 == nil %> spots remaining.</div>
+			<div class='wrapper'>12:00 P.M. <%= f.radio_button(:time1, '12:00') %><br /><%= 6 - @time3 unless @time3 == nil%> spots remaining.</div>
+			<div class='wrapper'>12:15 P.M. <%= f.radio_button(:time1, '12:15') %><br /><%= 6 - @time4 unless @time4 == nil %> spots remaining.</div>
+			<div class='wrapper'>12:30 P.M. <%= f.radio_button(:time1, '12:30') %><br /><%= 6 - @time5 unless @time5 == nil %> spots remaining.</div>
+			<div class='wrapper'>12:45 P.M. <%= f.radio_button(:time1, '12:45') %><br /><%= 6 - @time6 unless @time6 == nil %> spots remaining.</div>
+			<div class='wrapper'>1:00 P.M. <%= f.radio_button(:time1, '1:00') %><br /><%= 6 - @time7 unless @time7 == nil %> spots remaining.<br />
+			<div class='wrapper'>1:15 P.M. <%= f.radio_button(:time1, '1:15') %><br /><%= 6 - @time8 unless @time8 == nil %> spots remaining.</div>
+			<div class='wrapper'>1:30 P.M. <%= f.radio_button(:time1, '1:30') %><br /><%= 6 - @time9 unless @time9 == nil %> spots remaining.</div>
+			<div class='wrapper'>1:45 P.M. <%= f.radio_button(:time1, '1:45') %><br /><%= 6 - @time10 unless @time10 == nil %> spots remaining.</div>
+			<div class='wrapper'>5:00 P.M. <%= f.radio_button(:time1, '5:00') %><br /><%= 6 - @time11 unless @time11 == nil %> spots remaining.</div>
+			<div class='wrapper'>5:15 P.M. <%= f.radio_button(:time1, '5:15') %><br /><%= 6 - @time12 unless @time12 == nil %> spots remaining.</div>
+			<div class='wrapper'>5:30 P.M. <%= f.radio_button(:time1, '5:30') %><br /><%= 6 - @time13 unless @time13 == nil %> spots remaining.</div>
+			<div class='wrapper'>5:45 P.M. <%= f.radio_button(:time1, '5:45') %><br /><%= 6 - @time14 unless @time14 == nil %> spots remaining.</div>
+			<div class='wrapper'>6:00 P.M. <%= f.radio_button(:time1, '6:00') %><br /><%= 6 - @time15 unless @time15 == nil %> spots remaining.</div>
+			<div class='wrapper'>6:15 P.M. <%= f.radio_button(:time1, '6:15') %><br /><%= 5 - @time16 unless @time16 == nil %> spots remaining.</div>
+			<div class='wrapper'>6:30 P.M. <%= f.radio_button(:time1, '6:30') %><br /><%= 6 - @time17 unless @time17 == nil %> spots remaining.</div>
+			<div class='wrapper'>6:45 P.M. <%= f.radio_button(:time1, '6:45') %><br /><%= 6 - @time18 unless @time18 == nil %> spots remaining.</div>
+			<div class='wrapper'>7:00 P.M. <%= f.radio_button(:time1, '7:00') %><br /><%= 6 - @time19 unless @time19 == nil %> spots remaining.</div>
+			<div class='wrapper'>7:15 P.M. <%= f.radio_button(:time1, '7:15') %><br /><%= 6 - @time20 unless @time20 == nil %> spots remaining</div>
+			<%= f.hidden_field :day, :value => 'Day 1' %>
+  <button class="btn btn-inverse" type="submit"class="actions">Submit</button>
+  <% end %>
+	</div> 
+</div>
+
+
+<div id="user-day2-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">Time Selection
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+</div>
+<div class="modal-body">
+    <%= form_for @user do |f| %>
+			<div class='wrapper'>11:30 A.M. <%= f.radio_button(:time2, '11:30') %><br /><%= 6 - @time21 unless @time21 == nil %> spots remaining.</div> 
+			<div class='wrapper'>11:45 A.M. <%= f.radio_button(:time2, '11:45') %><br /><%= 6 - @time22 unless @time22 == nil %> spots remaining.</div>
+			<div class='wrapper'>12:00 P.M. <%= f.radio_button(:time2, '12:00') %><br /><%= 6 - @time23 unless @time23 == nil%> spots remaining.</div>
+			<div class='wrapper'>12:15 P.M. <%= f.radio_button(:time2, '12:15') %><br /><%= 6 - @time24 unless @time24 == nil %> spots remaining.</div>
+			<div class='wrapper'>12:30 P.M. <%= f.radio_button(:time2, '12:30') %><br /><%= 6 - @time25 unless @time25 == nil %> spots remaining.</div>
+			<div class='wrapper'>12:45 P.M. <%= f.radio_button(:time2, '12:45') %><br /><%= 6 - @time26 unless @time26 == nil %> spots remaining.</div>
+			<div class='wrapper'>1:00 P.M. <%= f.radio_button(:time2, '1:00') %><br /><%= 6 - @time27 unless @time27 == nil %> spots remaining.<br />
+			<div class='wrapper'>1:15 P.M. <%= f.radio_button(:time2, '1:15') %><br /><%= 6 - @time28 unless @time28 == nil %> spots remaining.</div>
+			<div class='wrapper'>1:30 P.M. <%= f.radio_button(:time2, '1:30') %><br /><%= 6 - @time29 unless @time29 == nil %> spots remaining.</div>
+			<div class='wrapper'>1:45 P.M. <%= f.radio_button(:time2, '1:45') %><br /><%= 6 - @time30 unless @time30 == nil %> spots remaining.</div>
+			<div class='wrapper'>5:00 P.M. <%= f.radio_button(:time2, '5:00') %><br /><%= 6 - @time31 unless @time31 == nil %> spots remaining.</div>
+			<div class='wrapper'>5:15 P.M. <%= f.radio_button(:time2, '5:15') %><br /><%= 6 - @time32 unless @time32 == nil %> spots remaining.</div>
+			<div class='wrapper'>5:30 P.M. <%= f.radio_button(:time2, '5:30') %><br /><%= 6 - @time33 unless @time33 == nil %> spots remaining.</div>
+			<div class='wrapper'>5:45 P.M. <%= f.radio_button(:time2, '5:45') %><br /><%= 6 - @time34 unless @time34 == nil %> spots remaining.</div>
+			<div class='wrapper'>6:00 P.M. <%= f.radio_button(:time2, '6:00') %><br /><%= 6 - @time35 unless @time35 == nil %> spots remaining.</div>
+			<div class='wrapper'>6:15 P.M. <%= f.radio_button(:time2, '6:15') %><br /><%= 5 - @time36 unless @time36 == nil %> spots remaining.</div>
+			<div class='wrapper'>6:30 P.M. <%= f.radio_button(:time2, '6:30') %><br /><%= 6 - @time37 unless @time37 == nil %> spots remaining.</div>
+			<div class='wrapper'>6:45 P.M. <%= f.radio_button(:time2, '6:45') %><br /><%= 6 - @time38 unless @time38 == nil %> spots remaining.</div>
+			<div class='wrapper'>7:00 P.M. <%= f.radio_button(:time2, '7:00') %><br /><%= 6 - @time39 unless @time39 == nil %> spots remaining.</div>
+			<div class='wrapper'>7:15 P.M. <%= f.radio_button(:time2, '7:15') %><br /><%= 6 - @time40 unless @time40 == nil %> spots remaining</div>
+			<%= f.hidden_field :day, :value => 'Day 2' %>
+  <button class="btn btn-inverse" type="submit"class="actions">Submit</button>
+  <% end %>
+	</div> 
+</div>
+
