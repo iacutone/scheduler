@@ -9,6 +9,7 @@ gem 'pg'
 gem 'pry'
 gem 'jquery-tablesorter'
 gem 'client_side_validations'
+gem 'prawn'
 
 group :development do
 	gem 'better_errors'

@@ -16,7 +16,34 @@
 
 
 .field_with_errors .message {
-	color: #FFC200;
+	color: black;
 	padding-left: 10px;
 	display: inline;
 }
+
+.wrapper {
+	padding: 10px;
+}
+
+.modal-body {
+	background: #324FB2;
+}
+
+.modal-header {
+	background: #524E43;
+	color: #D1B76C;
+	font-family: 'Cantata One', serif;
+}
+
+.tablewrapper {
+	padding: 2px;
+}
+
+.row-fluid {
+	background: #D9CEB1;
+	padding: 10px;
+	font-family: 'Cantata One', serif;
+}
+
+
+
