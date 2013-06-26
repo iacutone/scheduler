@@ -7,7 +7,7 @@
 </div>
 <div class="modal-body">
     <%= form_for @user do |f| %>
-			<div class='wrapper'>11:30 A.M. <%= f.radio_button(:time1, '11:30') %><br /><%= 1 - @time1 unless @time1 == nil %> spots remaining.</div> 
+			<div class='wrapper'>11:30 A.M. <%= f.radio_button(:time1, '11:30') %><br /><%= 6 - @time1 unless @time1 == nil %> spots remaining.</div> 
 			<div class='wrapper'>11:45 A.M. <%= f.radio_button(:time1, '11:45') %><br /><%= 6 - @time2 unless @time2 == nil %> spots remaining.</div>
 			<div class='wrapper'>12:00 P.M. <%= f.radio_button(:time1, '12:00') %><br /><%= 6 - @time3 unless @time3 == nil%> spots remaining.</div>
 			<div class='wrapper'>12:15 P.M. <%= f.radio_button(:time1, '12:15') %><br /><%= 6 - @time4 unless @time4 == nil %> spots remaining.</div>
