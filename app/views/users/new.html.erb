@@ -1,7 +1,7 @@
 <div class='row-fluid'>
   <div class='frontpage'>
     <h2>Sign up to talk about Peace Corps</h2><br />
-
+    <div class='border'>
     <%= form_for @user, :validate => true do |f| %>
       <div class="field">
         <%= f.label :name %>
@@ -17,5 +17,6 @@
       </div>
     	<button class="btn btn-inverse" type="submit"class="actions">Save</button>
     <% end %>
+  </div>
   </div>
 </div>
