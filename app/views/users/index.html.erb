@@ -1,7 +1,7 @@
 <div class='row-fluid'>
 	<div class='span8'>
 		<h2>Times</h2>	
-		
+		<% if admin? %>
 			<table id='mytable' class='tablesorter' border='1'>
 				<thead>
 					<tr>
@@ -27,5 +27,6 @@
 			</table><br />
 			<p>Download <%= link_to "PDF", users_path(format: "pdf") %> |
 			<%= link_to "Excel", users_path(format: "xls") %></p>
+		<% end %>
 	</div>
 </div>
